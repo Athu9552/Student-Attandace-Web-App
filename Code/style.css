@@ -1,0 +1,307 @@
+body,html{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; 
+  /* color: white; */
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* background-color: #243b55; */
+  /* background-image: url("bg.jpg"); */
+}
+
+
+nav{
+  /* background: #141e30; */
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+
+select {
+  padding-right: 21%;
+  padding-left: 21%;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+
+option{
+  color: black;
+}
+
+
+#BCA{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+#BCA div a{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(28, 2, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+#BCA div a:hover{
+  border-radius: 36%;
+  transition-delay: 1;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+#MCA{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+#MCA div a{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(28, 2, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+#MCA div a:hover{
+  border-radius: 36%;
+  transition-delay: 1;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+
+#B_TECH{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+#B_TECH div a{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(28, 2, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+#B_TECH div a:hover{
+  border-radius: 36%;
+  transition-delay: 1;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.session-area{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+th, td {
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+input[type="date"]{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+th {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+  }
+
+
+  #Subject div {
+    margin: 0 15px;
+    font-size: 18px;
+    height: 21px;
+    width: 151px;
+    margin: 10px;
+    padding: 0px;
+    text-decoration: none;
+    background-color: rgb(28, 2, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+  } 
+
+  #Subject div:hover{
+    border-radius: 25px;
+    transition-delay: 1;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  }
+
+#Subject a{
+  color: white;
+  text-decoration: none;
+}
+
+h2{
+  color: white;
+}
+
+
+@media (max-width:851px){
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:800px){
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #243b55;
+    top:80px;
+    left: -100%;
+    text-align: center;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ul{
+    left: 0;
+  }
+
+  select{
+    padding-right: 51px;
+    padding-left: 51px;
+    color: black;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Puts the spline background behind other elements */
+}
+
+
+nav, .session-area, select {
+  z-index: 1; /* Ensures these elements appear above the spline-viewer */
+  position: relative; /* Set position to relative to respect z-index */
+}
