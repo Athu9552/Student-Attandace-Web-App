@@ -46,6 +46,7 @@
     <source src="bg/bg8.mp4" type="video/mp4"/>
     Your browser does not support the video tag.
   </video>
+
   <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -326,6 +327,7 @@
       </tbody>
     </table>
   </div>
+
   <script>
     // Function to show the subject selection.
 function showSubject() {
@@ -357,7 +359,7 @@ function loadAttendance(subject) {
     const attendanceData = JSON.parse(localStorage.getItem('attendance_' + subject + '_' + date)) || {};
 
     // Update checkbox states based on the loaded data
-    document.querySelectorAll(#${subject} input[type="checkbox"]).forEach(checkbox => {
+    document.querySelectorAll(`#${subject} input[type="checkbox"]`).forEach(checkbox => {
       const name = checkbox.getAttribute('name');
       checkbox.checked = attendanceData[name] || false;
     });
@@ -380,14 +382,13 @@ function saveAttendance() {
   }
 
   let attendanceData = {};
-  document.querySelectorAll(#${subject} input[type="checkbox"]).forEach(checkbox => {
+  document.querySelectorAll(`#${subject} input[type="checkbox"]`).forEach(checkbox => {
     attendanceData[checkbox.getAttribute('name')] = checkbox.checked;
   });
 
   localStorage.setItem('attendance_' + subject + '_' + date, JSON.stringify(attendanceData));
   alert("Attendance saved for " + date);
 }
-
 
   </script>
 </body>
